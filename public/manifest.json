@@ -1,0 +1,29 @@
+{
+  "name": "Pousada Vista do Lago",
+  "short_name": "Vista do Lago",
+  "description": "Refúgio premium às margens da Lagoa de Araruama com hospedagem, Day Use, piscina e gastronomia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F5F0",
+  "theme_color": "#102A22",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/images/logo-vista-do-lago.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo-vista-do-lago.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "travel",
+    "lifestyle"
+  ]
+}

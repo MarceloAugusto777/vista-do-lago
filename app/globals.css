@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 247 245 240;
+    --foreground: 26 29 27;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F7F5F0;
+    color: #1A1D1B;
+  }
+
+  body {
+    overflow-x: hidden;
+    font-family: var(--font-jakarta), sans-serif;
+  }
+
+  ::selection {
+    background-color: #102A22;
+    color: #E9E2D5;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F7F5F0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #8E9C87;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #21473B;
+  }
+}
+
+@layer utilities {
+  .font-serif-editorial {
+    font-family: var(--font-cormorant), Georgia, serif;
+  }
+
+  /* Glassmorphism Variants */
+  .glass-nav {
+    background: rgba(247, 245, 240, 0.72);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 30px -10px rgba(16, 42, 34, 0.08);
+  }
+
+  .glass-nav-scrolled {
+    background: rgba(16, 42, 34, 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(201, 170, 114, 0.2);
+    box-shadow: 0 12px 35px -10px rgba(0, 0, 0, 0.3);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .glass-dark {
+    background: rgba(16, 42, 34, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(201, 170, 114, 0.18);
+  }
+
+  .glass-gold {
+    background: rgba(201, 170, 114, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(201, 170, 114, 0.3);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.4);
+  }
+
+  .text-glow-gold {
+    text-shadow: 0 0 30px rgba(201, 170, 114, 0.5);
+  }
+
+  .bg-noise {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.15) 1px, transparent 0);
+    background-size: 16px 16px;
+  }
+
+  /* ── Performance: remove 300ms tap delay em mobile ── */
+  button,
+  a,
+  [role="button"] {
+    touch-action: manipulation;
+  }
+
+  /* ── Scrollbar oculta para carousels horizontais ── */
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ── Input date em fundos escuros (BookingDrawer) ── */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) opacity(0.6);
+    cursor: pointer;
+  }
+  input[type="date"] {
+    color-scheme: dark;
+  }
+
+  /* ── Will-change para elementos animados no scroll ── */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  /* ── Aspect ratio fallback ── */
+  .aspect-square { aspect-ratio: 1 / 1; }
+  .aspect-video  { aspect-ratio: 16 / 9; }
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pousadavistadolago.com.br/sitemap.xml
+
+# Disallow admin or internal paths if any
+Disallow: /api/
