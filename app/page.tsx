@@ -23,6 +23,7 @@ import { FinalCTA } from '@/components/sections/FinalCTA';
 
 import { BookingDrawer } from '@/components/ui/BookingDrawer';
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
+import { InstagramButton } from '@/components/ui/InstagramButton';
 import { MobileBottomBar } from '@/components/ui/MobileBottomBar';
 
 export default function Home() {
@@ -102,6 +103,7 @@ export default function Home() {
       />
 
       {/* Quick Action Floating Widgets */}
+      <InstagramButton />
       <WhatsAppButton onClick={() => handleOpenBooking('hospedagem')} />
       <MobileBottomBar onOpenBooking={handleOpenBooking} />
     </main>

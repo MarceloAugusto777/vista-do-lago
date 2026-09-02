@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
           {/* Social Icons */}
           <div className="flex items-center gap-3">
             <a
-              href="https://instagram.com/vistadolago_pousada"
+              href="https://www.instagram.com/vistadolago_pousada/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 border border-white/15 text-sand hover:bg-champagne hover:text-forest-deep transition-all"

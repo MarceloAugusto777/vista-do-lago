@@ -140,7 +140,7 @@ const jsonLd = {
     { '@type': 'LocationFeatureSpecification', name: 'Day Use', value: true },
   ],
   sameAs: [
-    'https://instagram.com/vistadolago_pousada',
+    'https://www.instagram.com/vistadolago_pousada/',
     'https://wa.me/5522999999999',
   ],
 };
